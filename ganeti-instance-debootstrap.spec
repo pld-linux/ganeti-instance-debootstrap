@@ -10,6 +10,15 @@ URL:		https://code.google.com/p/ganeti/
 BuildRequires:	rpmbuild(macros) >= 1.647
 Requires:	debootstrap
 Requires:	ganeti
+Requires:	util-linux
+Requires:	kpartx
+Requires:	losetup
+Requires:	e2fsprogs
+Requires:	coreutils
+Requires:	mount
+Requires:	sed
+Requires:	dump
+Requires:	tar
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
