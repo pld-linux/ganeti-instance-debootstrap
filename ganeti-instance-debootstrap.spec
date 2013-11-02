@@ -8,17 +8,18 @@ Source0:	https://ganeti.googlecode.com/files/%{name}-%{version}.tar.gz
 # Source0-md5:	318039b68d63453ac115a6987e31c6f0
 URL:		https://code.google.com/p/ganeti/
 BuildRequires:	rpmbuild(macros) >= 1.647
+Requires:	blockdev
+Requires:	coreutils
 Requires:	debootstrap
+Requires:	dump
+Requires:	e2fsprogs
 Requires:	ganeti
-Requires:	util-linux
 Requires:	kpartx
 Requires:	losetup
-Requires:	e2fsprogs
-Requires:	coreutils
 Requires:	mount
 Requires:	sed
-Requires:	dump
 Requires:	tar
+Requires:	util-linux
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
