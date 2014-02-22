@@ -1,7 +1,7 @@
 Summary:	Debian/Ubuntu guest OS definition for Ganeti
 Name:		ganeti-instance-debootstrap
 Version:	0.14
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Applications/System
 Source0:	https://ganeti.googlecode.com/files/%{name}-%{version}.tar.gz
@@ -22,6 +22,7 @@ Requires:	mount
 Requires:	sed
 Requires:	tar
 Requires:	util-linux
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
